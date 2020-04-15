@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Main page</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/hover.js"></script>
+    <div id="main">
+        <input type="text" id="username" value="Username">
+        <input type="password" id="password" value="Password">
+        <button id="showPass" onclick="showPass(password)">Show password</button>
+        <br>
+        <button id="login" onclick="login(username, password)">Log in</button>
+        <button id="register" onclick="register(username, password)">Register</button>
+    </div>
+    <div id="profile">
+        <label id="name"></label>
+        <label id="balance"></label>
+        <img id="photo" src="img/1.jpg">
+        <button id="edit" onclick="editProfile()">Edit</button>
+        <button id="changePhoto" onclick="changePhotoProfile()">Change photo</button>
+        <select id="photoSelect" size="5" onchange="changePhoto(this)">
+            <option value="img/1.jpg">1st photo</option>
+            <option value="img/2.jpg">2nd photo</option>
+            <option value="img/3.jpg">3rd photo</option>
+            <option value="img/4.jpg">4th photo</option>
+            <option value="img/5.jpg">5th photo</option>
+        </select>
+        <button id="return" onclick="returnProfile()">Return</button>
+        <button id="quit" onclick="quitProfile()">Quit</button>
+    </div>
+</body>
+</html>
